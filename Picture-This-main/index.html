@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture This!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="title">
+      <h1>Picture This!</h1>
+      <h4>My Really Cool Blog Post</h4>
+    </div>
+
+ <picture class="hero-img">
+
+<!-- I cropped the image in square format and used it as reference for the following sizes.
+  Used for big screens like desktops -->
+  <source
+    media="(min-width: 960px)"
+    srcset="
+      images/museum-square-480x.jpg 480w,
+      images/museum-square-640x.jpg 640w,
+      images/museum-square-800x.jpg 800w,
+      images/museum-square-960x.jpg 960w,
+      images/museum-square-1280x.jpg 1280w,
+      images/museum-square-1440x.jpg 1440w,
+      images/museum-square-1600x.jpg 1600w,
+      images/museum-square-1920x.jpg 1920w,
+      images/museum-square-2400x.jpg 2400w
+    "
+    sizes="50vw"
+  />
+
+<!-- 
+  I cropped the image in landscape format and used it 
+  as reference for the following sizes.
+  Used for small screens like phones and tablets 
+-->
+  <img
+    src="images/museum-landscape-960x.jpg"
+    srcset="
+      images/museum-landscape-320x.jpg 320w,
+      images/museum-landscape-480x.jpg 480w,
+      images/museum-landscape-640x.jpg 640w,
+      images/museum-landscape-720x.jpg 720w,
+      images/museum-landscape-960x.jpg 960w,
+      images/museum-landscape-1440x.jpg 1440w,
+      images/museum-landscape-1920x.jpg 1920w,
+      images/museum-landscape-2160x.jpg 2160w,
+      images/museum-landscape-2880x.jpg 2880w
+    "
+    sizes="100vw"
+    alt="Museum gallery room with framed paintings"
+  />
+</picture>
+
+  </header>
+</body>
+
+</html>
